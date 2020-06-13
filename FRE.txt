@@ -1,0 +1,14 @@
+A. Error Handling & Exceptions
+	try:
+    		result = input('Please enter a number here ')
+    		1 + int(result)
+	except TypeError: #TypeError shouldn't be memorized 
+    		print('You are not adding the correct things together')
+	except ValueError: #ValueError shouldn't be memorized
+    		print('Hey, Make sure you supply a number!')
+	else:
+    		print('Everything ran smoothly')
+
+
+B. Debugging and Datetime
+	
