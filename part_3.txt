@@ -1,0 +1,59 @@
+A. Python Function
+	def func(): #should in lower case
+		print('It is func()')
+
+	def my_name(name):
+		print('My name is {}'.format(name))
+		# Only print, not saved, not taken as variable
+
+	def add(n1,n2):
+		return n1+n2 #The data was saved
+	
+	' '.join(result)
+
+
+B. Function Task
+	def seq_check(nums):
+    		'''
+    		To check whether [1,2,3] exists in nums
+    		'''
+    		for i in range(len(nums)-2):
+        		if nums[i] == 1 and nums[i+1] == 2 and nums[i+2] == 3:
+            			return True
+    		return False
+
+
+C. Nested Function
+	# LOCAL
+	# ENCLOSING
+	# GLOBAL
+	# BUILT IN
+
+	x = 'global outside'
+
+	def myfun(x):
+    		print('x is {}'.format(x))
+    
+   		x = 'redefined inside myfun{}'
+    
+    		print(x)
+	myfun(x) => x is global outside \n redefined inside myfun()
+
+
+D. Lambda Expressions, Map(), Filter()
+	map(function,data)
+	filter(function,data)
+
+	list(map(lambda num:num**2,[1,2,3,4,5])) => [1,4,9,16,25]
+	list(filter(lambda n:n%2==0,[1,2,3,4])) => [2,4]
+	
+	
+
+
+
+
+
+
+
+
+
