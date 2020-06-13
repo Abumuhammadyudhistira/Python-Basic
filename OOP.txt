@@ -1,0 +1,96 @@
+A. Object Oriented Programming I
+	class Sample(): # class is keyword, Sample is object
+		pass
+	
+	class Circle():
+    
+    	pi = 3.14 # Circle.pi
+    
+    		def __init__(self,radius):
+        
+        		self.radius = radius
+        
+    		def area(self): #area is a method
+        
+       	 		return Circle.pi * self.radius * self.radius
+    
+    		def perimeter(self):
+        
+        		return 2 * self.radius * Circle.pi
+    
+    		def report_something(self,name):
+        
+        		return 'Report {}'.format(name)
+	
+	my_circle = Circle(3) # 3 is radius
+	my_circle.radius => 3
+	my_circle.perimeter() => 18.84
+	my_circle.area() => 28.26
+
+
+B. Object Oriented Programming II
+	#Inheritance => Making class that use previous class
+
+	class Person():
+    
+    		def __init__(self,first_name,last_name):
+        
+        		self.first_name = first_name
+        		self.last_name = last_name
+        
+    		def report(self):
+        
+        		print('I am {} {}'.format(self.first_name,self.last_name))
+        
+    		def hello(self):
+        		print('hello!')
+		
+	P = Person('James','Bond')
+	P.report() => I am James Bond
+	P.hello() => hello!
+
+	class Agent(Person): #Person was inheritted
+    
+    		def __init__(self,first_name,last_name,code_name):
+        
+        		Person.__init__(self,first_name,last_name) #Inheriting attribute from other class
+        		self.code_name = code_name
+    
+    		def report(self):
+        		print('Sorry I cannot tell you my real name')
+        		print('But you can call me {}'.format(self.code_name))
+        
+    		def True_name(self,passcode): # Input only for True_name function
+        
+        		if passcode == 123:
+            			print('Correct Passcode')
+            			print('I am {} {}'.format(self.first_name,self.last_name))
+            
+        		else:
+            			self.report() #Inherit Method
+            
+    		def _private_method(self): #Special Method
+        		print('private method')
+	
+	x = Agent(first_name='Alan',last_name='Turner',code_name='Hero0)
+	x.hello() => hello!
+	x.True_name(123) => Correct Passcode \n I am Alan Turner
+	x.report() => Sorry I cannot tell you my real name 
+		      I am Alan Turner
+	x.first_name => 'Alan' 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
