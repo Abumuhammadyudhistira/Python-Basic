@@ -1,0 +1,74 @@
+A. Number
+	type()
+	* 
+	/ 
+	+ 
+	- 
+	**
+
+
+B. Strings
+	'I want to break free'
+	print('I want to break free)
+	a = 'This is variable' # Saving string into variable
+	INDEXING
+	a[0] => 'T'
+	a[0:6] => 'This i'
+	a[start:stop(not included):step]
+	a.upper()
+	a.split()
+	print('abcd {}'.format())
+	\n
+
+
+C. Lists
+	lists = [1,2,3,'a','bb']
+	len(lists) => 5
+	lists.append()
+	lists.pop()
+	lists.reverse()
+	lists.sort()
+	lists.insert()
+
+
+D. Dictionaries
+	dict = {'key1':'value1','key2':'value2'}
+	dict['key1'] # calling 'value1'	
+	dict['new_key'] = 'new_value'
+	dict.keys()
+	dict.values()
+	dict.items()
+
+
+E. Tuples
+	tuple = (1,2,3,4,5)
+	tuple.index()
+	tuple.count()
+	
+
+F. Set
+	x = set()
+	x.add()
+	set(lists) => unique data
+	
+
+G. Booleans
+	a = True
+	a => True
+	1 > 2 => False
+	1 < 3 => True
+	b = None
+	type(None) => NoneType # Not True nor False
+
+
+H. Working with file
+	f = open('file.txt',mode='r') # 'r','w','a','r+','w+','a+'
+	f.read() 
+	f.seek(0)
+	f.readlines()
+	f.close() => essential
+	with open('file.txt) as f:
+		lines = file.read()
+		print(lines)
+
+	
