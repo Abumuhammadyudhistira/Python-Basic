@@ -1,0 +1,90 @@
+A. If Elif ELse
+	if 1<2: #True
+		print('condition met')
+	if 1<3: #Another True
+		print('
+	else: #False
+		print('empty')
+	and
+	or
+	not
+
+B. While loops
+	passcode = 0
+	while passcode != 123: #True
+		passcode = int(input('Please provide your passcode : ')) 
+		break # Loof for reason for stopping
+
+
+C. For loop
+	lists= [1,2,3,4] # string, tuple
+
+	for thing in lists: # Depends on data type size
+		print('hello')
+		print(thing,end='')
+	
+	list_of_tup = [(1,2),(3,4),(5,6)]
+
+	for x,y in list_of_tup:
+		print(x)
+		print(y)
+	=>1
+	  2
+	  3
+	  4
+	  5
+	  6
+
+
+D. Useful Python Operator
+	list(range(0,10))
+	=> [0,1,2,3,4,5,6,7,8,9]
+	list(enumerate('abcde'))
+	=> [(0,'a'),(1,'b'),(2,'c'),(3,'d'),(4,'e')]
+	list1 = [1,2,3]
+	list2 = ['a','b','c']	
+	list(zip(list1,list2))
+	=> [(1,'a'),(2,'b'),(3,'c')]
+
+	'x' in 'axe'
+	=> True
+	1 in [1,2,3]
+	=> True
+	from random import shuffle,randint
+	min()
+	max()
+	shuffle()
+	randint()
+	
+
+E. List Comprehension
+	lists = []
+
+	string = 'strings'
+
+	for letter in string:
+		lists.append(letter)
+
+	new_list1 = [x**2 for x in range(0,11)]
+	new_list2 = [x**2 for x in range(0,11) if x%2==0]
+	new_list3 = [x if x%2==0 else 'not even' for x in range(0,10)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
