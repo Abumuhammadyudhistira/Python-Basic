@@ -11,4 +11,76 @@ A. Error Handling & Exceptions
 
 
 B. Debugging and Datetime
+	import pdb
+	x = '1'
+	y = 2
+	z = 3
+	# lots more code
+	result = y + z
+	print(result)
+	# code
+	# code
+	# code
+	pdb.set_trace() # can be used to efficiently checking your code
+	# lots more code
+	new_result = y + x # NameError => x is not integer
+	print(new_result)
+	
+	import datetime
+	t = datetime(1,15,5) # (hours,minutes,seconds)
+	t.hour
+	t.minute
+	t.second
+	t.microsecond
+	t = datetime.date(2018,10,11) #(years, months, days)
+	datetime.date.today() # checking today's date
+	datetime.datetime.now() # checking time now
+	
+	
+C. Modules and Packages
+	module => file that can be imported, ex: pandas, random
+	package => collection of modules
+	
+	import mymodule
+	from mypackage.some_file import some_func
+	
+	# parent .py (mymodule.py)
+	def func_in_mymodule():
+		print('Iam a function inside mymodule.py')
+		
+	# child .py (myprogram.py)
+	import mymodule
+	mymodule.func_in_mymodule()
+	
+	OR
+	
+	from mymodule import func_in_mymodule, another_func
+	
+	
+D. __name__ and "__main__"
+	if __name__=="__main__" => usually used if you want to know whether it is imported or not
+	# one.py
+	def func():
+		print('func() in one.py')
+		
+	print('top level print statement in one.py')
+	
+	if __name__=="__main__": # if it was being run directly
+		print('one.py is being run directly')
+	else:
+		print('one.py is being run in another module')
+	# two.py
+	import one
+	
+	print('top level in two.py')
+	
+	one.func()
+	
+	if __name__=="__main__": # if it was being run directly
+		print('two.py is being run directly')
+	else:
+		print('two.py is being run in another module')
+	
+		
+	
 	
